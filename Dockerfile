@@ -21,7 +21,7 @@ RUN git clone https://git.zx2c4.com/wireguard-tools && \
     make && \
     make install
 
-FROM ${ARCH}/alpine:3.13
+FROM ${ARCH}/alpine:edge
 
 ARG BUILD_DATE
 ARG VERSION
@@ -53,6 +53,7 @@ RUN \
     openvpn \
     tini \
     tor \
+    i2pd \
     tzdata \
     unzip && \
   rm -fr /var/cache/apk/* && \

@@ -42,6 +42,10 @@ case "${PROVIDER}" in
     UNAME="generic"
     PASSWD="generic"
     ;;
+
+  "i2p")
+    echo "Loading I2P Network Proxy..."
+    ;;
     
   "ipvanish")
     echo "Loading IPVanish..."
